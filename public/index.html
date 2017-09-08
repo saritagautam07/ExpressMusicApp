@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="bootstrap.min.css" type="text/css">
+    <title> Express Music Server </title>
+    <style>
+        body {
+
+        padding: 30px;
+        background: url('./music.png');
+        text-align: center;
+        }
+        .contents{
+        background: #fff;
+        padding: 20px;
+        margin: auto;
+        opacity: 0.7;
+        text-align: center;
+        }
+        .contents button{
+        width: 100px;
+        opacity: 0.9;
+        background: #020;
+        }
+        h1 {
+        color: #333333;
+        font-size: 60px;
+        }
+        h2 {
+        color: #2e2e2e;
+        font-size: 28px;
+        }
+        a {
+        color: #2f2f2f;
+        font-size: 18px
+        }
+
+    </style>
+</head>
+<body>
+<div class="container contents">
+    <h1>  Express Musical </h1>
+    <br>
+    <h2> After silence, that which comes nearest to expressing the inexpressible is music </h2>
+    <br>
+
+    <div class="row">
+        <div class="col-md-4">
+            <img class="img img-responsive" src="song.png"/>
+            <h2> Another.mp3 </h2>
+
+            <a href="http://localhost:3000/music?id=Another.mp3" target="_blank"> <button class="btn btn-success"> Play </button>	</a> <br>
+            <a href="http://localhost:3000/download?id=Another.mp3"  target="_blank"> <button class="btn btn-success"> Downnload </button> </a>
+        </div>
+        <div class="col-md-4">
+            <img class="img img-responsive" src="song.png"/>
+            <h2> Champions.mp3 </h2>
+            <a href="http://localhost:3000/music?id=Champions.mp3" target="_blank"> <button class="btn btn-success"> Play </button>	</a> <br>
+            <a href="http://localhost:3000/download?id=Champions.mp3"  target="_blank"> <button class="btn btn-success"> Downnload </button> </a>
+        </div>
+        <div class="col-md-4">
+            <img class="img img-responsive" src="song.png"/>
+            <h2> rock.mp3 </h2>
+            <a href="http://localhost:3000/music?id=rock.mp3" target="_blank"> <button class="btn btn-success"> Play </button>	</a> <br>
+            <a href="http://localhost:3000/download?id=rock.mp3"  target="_blank"> <button class="btn btn-success"> Downnload </button> </a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
